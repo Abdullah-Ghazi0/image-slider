@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+.container {
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.window {
+    display: flex;
+    position: relative;
+    height: auto;
+    aspect-ratio: 16 / 9;
+    width: 85%;
+    overflow-x: hidden;
+    border-radius: 0.5rem;
+    box-shadow: 0.5rem 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.4);
+}
+.window::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    rgba(0,0,0,0.1),
+    rgba(0,0,0,0.2)
+  );
+  z-index: 1;
+
+}
+.row {
+    display: flex;
+    transition: transform 800ms ease;
+}
+
+.img {
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3));
+}
+
+.current-img {
+    display: block;
+    position: absolute;
+}
+
+.scrollBtns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 45px;
+    width: 45px;
+    background: transparent;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.scrollBtns:active {
+    color: rgb(188, 193, 197);
+}
+
+.prevBtn {
+    margin-right: -55px;
+    z-index: 2;
+}
+
+.nextBtn {
+    margin-left: -55px;
+    z-index: 2;
+}
+
+.nav {
+    display: flex;
+    gap: 0.7rem;
+    position: absolute;
+    bottom: 2rem;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: 2;
+}
+
+.nav button {
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+    background-color: white;
+    border: none;
+    opacity: 0.75;
+    cursor: pointer;
+    transition: scale 800ms ease;
+}
+
+.nav button:hover {
+    opacity: 1;
+}
+
+.currentslide {
+    scale: 1.4;
+}

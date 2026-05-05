@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carousel</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <button id="prev" class="scrollBtns prevBtn">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="m18.75 4.5-7.5 7.5 7.5 7.5m-6-15L5.25 12l7.5 7.5" />
+            </svg>
+        </button>
+        <div class="window">
+            <div class="row" id="imglist">
+                <img src="images/img05.jpg" class="img" alt="">
+                <img src="images/img01.jpg" class="img" alt="">
+                <img src="images/img02.jpg" class="img" alt="">
+                <img src="images/img03.jpg" class="img" alt="">
+                <img src="images/img04.jpg" class="img" alt="">
+                <img src="images/img05.jpg" class="img" alt="">
+                <img src="images/img01.jpg" class="img" alt="">
+            </div>
+            <div class="nav">
+                <button class="currentslide"></button>
+                <button></button>
+                <button></button>
+                <button></button>
+                <button></button>
+            </div>
+        </div>
+        <button id="next" class="scrollBtns nextBtn">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="m5.25 4.5 7.5 7.5-7.5 7.5m6-15 7.5 7.5-7.5 7.5" />
+            </svg>
+        </button>
+    </div>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
