@@ -11,12 +11,15 @@ A smooth, infinite scrolling image slider built with vanilla JavaScript.
 - Basic edge-case handling
 
 
-
 ## Tech Stack
 
 - HTML
 - CSS
 - JavaScript (Vanilla)
+
+## Preview
+<img width="1917" height="1022" alt="carousel" src="https://github.com/user-attachments/assets/848550b7-f56f-4e79-bea2-7837f9bc276b" />
+
 
 ## About
 
